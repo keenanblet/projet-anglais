@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heat AI — On transforme le calcul en chaleur</title>
+<meta name="description" content="Heat AI installe et exploite gratuitement ses data centers IA chez les villes, bailleurs et entreprises qui l'hébergent — en échange, la chaleur du calcul chauffe leurs bâtiments.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%230B3B22%22/><text x=%2250%22 y=%2268%22 font-family=%22Georgia%22 font-weight=%22900%22 font-size=%2258%22 fill=%22%23E7F6DA%22 text-anchor=%22middle%22>H</text></svg>">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700,500&f[]=switzer@400,500,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<svg style="position:absolute; width:0; height:0; overflow:hidden" aria-hidden="true">
+<symbol id="logoMark" viewBox="268 493 958 442" fill="currentColor">
+  <defs><clipPath id="logoMarkClip"><rect x="0" width="958" y="0" height="442"/></clipPath></defs>
+  <g transform="matrix(1, 0, 0, 1, 268, 493)">
+    <g clip-path="url(#logoMarkClip)">
+      <g><g transform="translate(0.460562, 313.746042)"><g><path d="M 16.953125 0 L 16.953125 -194.625 L 63.671875 -194.625 L 63.671875 -118.15625 L 139.578125 -118.15625 L 139.578125 -194.625 L 186.28125 -194.625 L 186.28125 0 L 139.578125 0 L 139.578125 -79.234375 L 63.671875 -79.234375 L 63.671875 0 Z M 16.953125 0 "/></g></g></g>
+      <g><g transform="translate(184.499514, 313.746042)"><g><path d="M 90.640625 0 C 74.515625 0 60.332031 -3.007812 48.09375 -9.03125 C 35.863281 -15.0625 26.363281 -23.40625 19.59375 -34.0625 C 12.832031 -44.71875 9.453125 -57.085938 9.453125 -71.171875 C 9.453125 -86.742188 12.695312 -100.085938 19.1875 -111.203125 C 25.675781 -122.328125 34.335938 -130.898438 45.171875 -136.921875 C 56.015625 -142.953125 68.019531 -145.96875 81.1875 -145.96875 C 96.195312 -145.96875 108.753906 -142.816406 118.859375 -136.515625 C 128.960938 -130.210938 136.609375 -121.640625 141.796875 -110.796875 C 146.984375 -99.953125 149.578125 -87.578125 149.578125 -73.671875 C 149.578125 -71.265625 149.4375 -68.4375 149.15625 -65.1875 C 148.882812 -61.945312 148.5625 -59.398438 148.1875 -57.546875 L 54.765625 -57.546875 C 55.878906 -52.734375 58.007812 -48.65625 61.15625 -45.3125 C 64.3125 -41.976562 68.296875 -39.523438 73.109375 -37.953125 C 77.929688 -36.378906 83.3125 -35.59375 89.25 -35.59375 L 132.90625 -35.59375 L 132.90625 0 Z M 53.65625 -84.515625 L 107.875 -84.515625 C 107.5 -87.484375 106.941406 -90.359375 106.203125 -93.140625 C 105.460938 -95.921875 104.304688 -98.375 102.734375 -100.5 C 101.160156 -102.632812 99.351562 -104.488281 97.3125 -106.0625 C 95.269531 -107.644531 92.90625 -108.898438 90.21875 -109.828125 C 87.53125 -110.753906 84.519531 -111.21875 81.1875 -111.21875 C 76.925781 -111.21875 73.125 -110.472656 69.78125 -108.984375 C 66.445312 -107.503906 63.664062 -105.507812 61.4375 -103 C 59.21875 -100.5 57.503906 -97.628906 56.296875 -94.390625 C 55.097656 -91.148438 54.21875 -87.859375 53.65625 -84.515625 Z M 53.65625 -84.515625 "/></g></g></g>
+      <g><g transform="translate(323.778871, 313.746042)"><g><path d="M 73.40625 3.34375 C 60.800781 3.34375 49.675781 0.0976562 40.03125 -6.390625 C 30.394531 -12.878906 22.890625 -21.640625 17.515625 -32.671875 C 12.140625 -43.703125 9.453125 -56.164062 9.453125 -70.0625 C 9.453125 -84.519531 12.601562 -97.445312 18.90625 -108.84375 C 25.207031 -120.25 34.148438 -129.285156 45.734375 -135.953125 C 57.316406 -142.628906 70.988281 -145.96875 86.75 -145.96875 C 102.6875 -145.96875 116.257812 -142.675781 127.46875 -136.09375 C 138.6875 -129.507812 147.304688 -120.519531 153.328125 -109.125 C 159.359375 -97.726562 162.375 -84.984375 162.375 -70.890625 L 162.375 0 L 120.109375 0 L 120.109375 -22.796875 L 119 -22.796875 C 116.40625 -17.796875 113.066406 -13.300781 108.984375 -9.3125 C 104.910156 -5.332031 99.953125 -2.226562 94.109375 0 C 88.273438 2.226562 81.375 3.34375 73.40625 3.34375 Z M 86.1875 -33.921875 C 92.675781 -33.921875 98.375 -35.539062 103.28125 -38.78125 C 108.195312 -42.03125 111.953125 -46.523438 114.546875 -52.265625 C 117.140625 -58.015625 118.4375 -64.410156 118.4375 -71.453125 C 118.4375 -78.304688 117.140625 -84.515625 114.546875 -90.078125 C 111.953125 -95.640625 108.195312 -100.039062 103.28125 -103.28125 C 98.375 -106.53125 92.675781 -108.15625 86.1875 -108.15625 C 79.519531 -108.15625 73.679688 -106.53125 68.671875 -103.28125 C 63.671875 -100.039062 59.867188 -95.640625 57.265625 -90.078125 C 54.671875 -84.515625 53.375 -78.304688 53.375 -71.453125 C 53.375 -64.410156 54.671875 -58.015625 57.265625 -52.265625 C 59.867188 -46.523438 63.671875 -42.03125 68.671875 -38.78125 C 73.679688 -35.539062 79.519531 -33.921875 86.1875 -33.921875 Z M 86.1875 -33.921875 "/></g></g></g>
+      <g><g transform="translate(482.796928, 313.746042)"><g><path d="M 68.390625 0 C 55.234375 0 44.945312 -3.75 37.53125 -11.25 C 30.113281 -18.757812 26.40625 -28.910156 26.40625 -41.703125 L 26.40625 -177.390625 L 69.78125 -177.390625 L 69.78125 -44.203125 C 69.78125 -41.984375 70.566406 -40.082031 72.140625 -38.5 C 73.722656 -36.925781 75.625 -36.140625 77.84375 -36.140625 L 108.984375 -36.140625 L 108.984375 0 Z M 3.0625 -107.3125 L 3.0625 -142.625 L 108.984375 -142.625 L 108.984375 -107.3125 Z M 3.0625 -107.3125 "/></g></g></g>
+      <g><g transform="translate(637.363469, 313.746042)"><g><path d="M 0 0 L 63.109375 -172.09375 C 66.265625 -180.625 71.457031 -187.066406 78.6875 -191.421875 C 85.914062 -195.773438 94.070312 -197.953125 103.15625 -197.953125 C 112.226562 -197.953125 120.378906 -195.867188 127.609375 -191.703125 C 134.835938 -187.535156 140.03125 -181.09375 143.1875 -172.375 L 206.578125 0 L 156.25 0 L 144.015625 -37.53125 L 61.4375 -37.53125 L 48.65625 0 Z M 73.40625 -76.1875 L 132.0625 -76.1875 L 107.3125 -153.75 C 106.945312 -154.863281 106.4375 -155.648438 105.78125 -156.109375 C 105.132812 -156.578125 104.347656 -156.8125 103.421875 -156.8125 C 102.492188 -156.8125 101.707031 -156.53125 101.0625 -155.96875 C 100.414062 -155.414062 100 -154.675781 99.8125 -153.75 Z M 73.40625 -76.1875 "/></g></g></g>
+      <g><g transform="translate(824.738527, 313.746042)"><g><path d="M 12.515625 0 L 12.515625 -38.921875 L 46.15625 -38.921875 L 46.15625 -155.703125 L 12.515625 -155.703125 L 12.515625 -194.625 L 126.21875 -194.625 L 126.21875 -155.703125 L 92.578125 -155.703125 L 92.578125 -38.921875 L 126.21875 -38.921875 L 126.21875 0 Z M 12.515625 0 "/></g></g></g>
+    </g>
+  </g>
+</symbol>
+</svg>
+
+<div class="grain"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- NAV -->
+<header class="nav" id="siteNav">
+  <a href="#top" class="logo logo--sm" aria-label="Heat AI — accueil">
+    <svg class="logo-icon" viewBox="0 0 958 442" aria-hidden="true"><use href="#logoMark"></use></svg>
+  </a>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="#concept"><span>01</span>Concept</a>
+    <a href="#comment"><span>02</span>Comment</a>
+    <a href="#produit"><span>03</span>Produit</a>
+    <a href="#garanties"><span>04</span>Garanties</a>
+    <a href="#ia"><span>05</span>L'IA</a>
+    <a href="#impact"><span>06</span>Impact</a>
+    <a href="#contact"><span>07</span>Contact</a>
+  </nav>
+
+  <a href="#contact" class="btn btn--nav">Devenir hébergeur</a>
+  <button class="burger" id="burger" aria-label="Menu">
+    <span></span><span></span>
+  </button>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="blob blob-a"></div>
+      <div class="blob blob-b"></div>
+      <svg class="waves" viewBox="0 0 1200 200" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,100 C150,180 350,20 600,100 C850,180 1050,20 1200,100 L1200,200 L0,200 Z" />
+      </svg>
+    </div>
+
+    <div class="hero-grid">
+      <div class="hero-main">
+        <p class="eyebrow reveal">Notre IA, hébergée chez vous</p>
+
+        <h1 class="hero-title hero-title--split">
+          <span class="reveal reveal--1">On fait tourner</span>
+          <span class="reveal reveal--2">des <em>serveurs</em>.</span>
+          <span class="reveal reveal--3">On chauffe des <span class="underline">foyers</span>.</span>
+        </h1>
+
+        <div class="hero-foot">
+          <p class="hero-sub reveal reveal--4">Pour faire tourner notre IA, on a besoin de calcul — pas de nouveaux data centers. Alors on installe et on opère nos serveurs gratuitement chez nos partenaires. En échange, la chaleur qu'ils dégagent chauffe leurs bâtiments, eau chaude comprise.</p>
+          <div class="hero-cta reveal reveal--4">
+            <a href="#contact" class="btn btn--primary">Héberger un module Heat AI <span>→</span></a>
+            <a href="#comment" class="btn btn--ghost">Voir comment ça marche</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal reveal--3" aria-hidden="true">
+        <div class="scene scene--hero" id="heroScene">
+          <div class="rig" id="heroRig">
+            <div class="cube">
+              <div class="face face--front">
+                <div class="face-vents"></div>
+                <div class="face-core"></div>
+                <div class="face-logo">HEAT&nbsp;AI</div>
+              </div>
+              <div class="face face--back"></div>
+              <div class="face face--right"><div class="face-vents face-vents--v"></div></div>
+              <div class="face face--left"><div class="face-vents face-vents--v"></div></div>
+              <div class="face face--top"><div class="face-panel"></div></div>
+              <div class="face face--bottom"></div>
+            </div>
+          </div>
+          <div class="floor-shadow"></div>
+          <div class="pipe-tag pipe-tag--hot">
+            <span class="pipe-dot"></span> Chauffage 55°C
+          </div>
+        </div>
+
+        <div class="hero-chat-float">
+          <div class="hero-chat-top"><span class="ia-dot"></span> Heat AI</div>
+          <p class="hero-chat-msg">Explique-moi ma facture d'énergie ce mois-ci.</p>
+          <div class="hero-chat-typing"><span></span><span></span><span></span></div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#marquee" class="scroll-cue" aria-label="Défiler">
+      <span></span>
+      Faire défiler
+    </a>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" id="marquee">
+    <div class="marquee-track">
+      <span>CALCUL</span><i>→</i><span>CHALEUR CAPTÉE</span><i>→</i><span>CHAUFFAGE</span><i>→</i><span>FOYERS CHAUFFÉS</span><i>→</i>
+      <span>CALCUL</span><i>→</i><span>CHALEUR CAPTÉE</span><i>→</i><span>CHAUFFAGE</span><i>→</i><span>FOYERS CHAUFFÉS</span><i>→</i>
+      <span>CALCUL</span><i>→</i><span>CHALEUR CAPTÉE</span><i>→</i><span>CHAUFFAGE</span><i>→</i><span>FOYERS CHAUFFÉS</span><i>→</i>
+    </div>
+  </div>
+
+  <!-- CONCEPT / PROBLEM -->
+  <section class="concept" id="concept">
+    <div class="section-head">
+      <p class="tag reveal">— Le constat</p>
+      <h2 class="reveal">Un data center, c'est <br>un radiateur qui s'ignore.</h2>
+    </div>
+
+    <div class="concept-grid">
+      <div class="concept-stat reveal">
+        <p class="big-number" data-count="90">0</p>
+        <p class="big-number-suffix">%</p>
+        <p class="stat-label">de l'électricité consommée par un data center ressort sous forme de chaleur — aujourd'hui rejetée dans l'air, pour rien.</p>
+      </div>
+      <div class="concept-text reveal">
+        <p>Chaque requête, chaque modèle entraîné, chaque calcul produit de la chaleur fatale. Les infrastructures classiques dépensent une énergie folle à l'évacuer — tours de refroidissement, climatisation, ventilation.</p>
+        <p>Plutôt que de construire ses propres data centers, Heat AI installe ses serveurs directement chez ses partenaires — gratuitement — et leur reverse toute la chaleur produite par le calcul de son IA.</p>
+        <a href="#comment" class="link-arrow">Découvrir le dispositif <span>→</span></a>
+      </div>
+    </div>
+
+    <div class="concept-footer-stats">
+      <div class="mini-stat reveal">
+        <p class="mini-number" data-count="55">0</p><span>°C</span>
+        <p>Température de restitution dans le réseau de chauffage</p>
+      </div>
+      <div class="mini-stat reveal">
+        <p class="mini-number" data-count="70">0</p><span>%</span>
+        <p>De besoin en chauffage couvert pour les bâtiments raccordés</p>
+      </div>
+      <div class="mini-stat reveal">
+        <p class="mini-number" data-count="3">0</p><span>sem.</span>
+        <p>Délai moyen d'installation d'un module Heat AI</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMENT CA MARCHE -->
+  <section class="comment" id="comment">
+    <div class="section-head section-head--dark">
+      <p class="tag reveal">— Le dispositif</p>
+      <h2 class="reveal">Du calcul au radiateur, <br>en quatre temps.</h2>
+    </div>
+
+    <ol class="steps">
+      <li class="step reveal">
+        <span class="step-index">01</span>
+        <h3>On héberge, vous recevez</h3>
+        <p>On installe et on opère gratuitement un module Heat AI chez vous. Vous fournissez l'espace et le raccordement — ses serveurs font tourner notre IA et dissipent de la chaleur par nature.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step-index">02</span>
+        <h3>Le liquide capte</h3>
+        <p>Un circuit de refroidissement liquide enveloppe chaque processeur et absorbe la chaleur directement à la puce, bien plus efficacement que l'air.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step-index">03</span>
+        <h3>L'échangeur élève</h3>
+        <p>Un échangeur thermique transfère cette énergie vers le réseau d'eau du bâtiment ou du quartier, jusqu'à une température directement exploitable.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step-index">04</span>
+        <h3>Le logement est chauffé</h3>
+        <p>Radiateurs et plancher chauffant montent en température chez les habitants — l'eau chaude sanitaire suit le même circuit. Sans combustion, sans gaz, sans fioul.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- PRODUIT -->
+  <section class="produit" id="produit">
+    <div class="section-head">
+      <p class="tag reveal">— Le produit</p>
+      <h2 class="reveal">Le Module <span class="italic">H‑01</span>, <br>un micro data center qui chauffe.</h2>
+      <p class="section-sub reveal">Installé et exploité gratuitement par nos équipes, en pied d'immeuble, en zone industrielle ou en périphérie de ville. Vous apportez l'espace et le raccordement électrique — on s'occupe du calcul, de la maintenance et de la chaleur qui en découle.</p>
+    </div>
+
+    <div class="product-card reveal">
+      <div class="product-visual" aria-hidden="true">
+        <div class="scene" id="dcScene">
+          <div class="rig" id="dcRig">
+            <div class="cube">
+              <div class="face face--front">
+                <div class="face-vents"></div>
+                <div class="face-core"></div>
+                <div class="face-logo">HEAT&nbsp;AI</div>
+              </div>
+              <div class="face face--back"></div>
+              <div class="face face--right"><div class="face-vents face-vents--v"></div></div>
+              <div class="face face--left"><div class="face-vents face-vents--v"></div></div>
+              <div class="face face--top"><div class="face-panel"></div></div>
+              <div class="face face--bottom"></div>
+            </div>
+          </div>
+          <div class="floor-shadow"></div>
+
+          <div class="pipe-tag pipe-tag--cold">
+            <span class="pipe-dot"></span> Entrée — calcul froid
+          </div>
+          <div class="pipe-tag pipe-tag--hot">
+            <span class="pipe-dot"></span> Sortie — chauffage 55°C
+          </div>
+        </div>
+      </div>
+
+      <div class="product-specs">
+        <div class="spec">
+          <p class="spec-label">Puissance de calcul</p>
+          <p class="spec-value">jusqu'à 250 kW</p>
+        </div>
+        <div class="spec">
+          <p class="spec-label">Chaleur valorisable</p>
+          <p class="spec-value">≈ 220 kW thermiques</p>
+        </div>
+        <div class="spec">
+          <p class="spec-label">Foyers desservis</p>
+          <p class="spec-value">80 à 150 logements</p>
+        </div>
+        <div class="spec">
+          <p class="spec-label">Emprise au sol</p>
+          <p class="spec-value">1 conteneur, 14 m²</p>
+        </div>
+        <div class="spec">
+          <p class="spec-label">Refroidissement</p>
+          <p class="spec-value">Liquide direct-puce</p>
+        </div>
+        <div class="spec">
+          <p class="spec-label">Mise en service</p>
+          <p class="spec-value">3 à 6 semaines</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-models">
+      <div class="model reveal">
+        <h4>Pour les villes</h4>
+        <p>Un module hébergé sur un terrain ou bâtiment municipal, raccordé au réseau de chaleur urbain — sans investissement initial pour la collectivité.</p>
+      </div>
+      <div class="model reveal">
+        <h4>Pour les bailleurs</h4>
+        <p>Chauffage collectif gratuit pour vos résidences — eau chaude sanitaire incluse, sans chaudière gaz à remplacer. Vous hébergez, on exploite.</p>
+      </div>
+      <div class="model reveal">
+        <h4>Pour les entreprises</h4>
+        <p>Accueillez un module sur site et chauffez vos locaux, serres ou piscines sans frais d'exploitation — vous apportez l'espace, on apporte le calcul.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GARANTIES -->
+  <section class="garanties" id="garanties">
+    <div class="section-head">
+      <p class="tag reveal">— Les garanties</p>
+      <h2 class="reveal">Ce qu'on nous demande, <br>à chaque fois, avant de signer.</h2>
+      <p class="section-sub reveal">Accueillir un module chez soi, c'est un engagement sur plusieurs années. Voici comment on répond aux questions qu'on nous pose systématiquement.</p>
+    </div>
+
+    <div class="faq-grid">
+      <div class="faq-item reveal">
+        <h4>Et l'été, quand vous avez moins besoin de chauffage ?</h4>
+        <p>L'eau chaude sanitaire reste une charge de base toute l'année : le module continue de la couvrir. Le surplus de chaleur non utilisé est évacué par un aéroréfrigérant d'appoint, sans jamais interrompre le calcul.</p>
+      </div>
+      <div class="faq-item reveal">
+        <h4>Et si l'usage de l'IA baisse un jour où il fait froid ?</h4>
+        <p>Nos modules sont maillés entre eux : quand le trafic d'un site est faible, on y redirige du calcul venu d'autres clients pour garantir une charge thermique minimale, fixée par contrat avec chaque hébergeur.</p>
+      </div>
+      <div class="faq-item reveal">
+        <h4>Qui est responsable de l'installation et de la sécurité ?</h4>
+        <p>Heat AI prend en charge l'installation, la maintenance et la conformité électrique et incendie du module. Vous fournissez l'espace et le raccordement — le reste nous appartient, du premier au dernier jour.</p>
+      </div>
+      <div class="faq-item reveal">
+        <h4>Que se passe-t-il si Heat AI arrête son activité ?</h4>
+        <p>Le contrat d'hébergement inclut une clause de continuité : reprise du module par un tiers ou maintien du chauffage pendant la durée prévue, à notre charge.</p>
+      </div>
+      <div class="faq-item reveal">
+        <h4>Qui paie quoi ?</h4>
+        <p>Heat AI finance le module, son installation, sa maintenance et son électricité. Vous apportez l'espace et le raccordement, et recevez la chaleur produite — sans investissement de votre côté.</p>
+      </div>
+      <div class="faq-item reveal">
+        <h4>Combien de temps dure l'engagement ?</h4>
+        <p>Les contrats courent sur 10 à 15 ans, avec un état des lieux annuel et une clause de sortie anticipée encadrée pour les deux parties.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- IA -->
+  <section class="ia" id="ia">
+    <div class="section-head">
+      <p class="tag reveal">— Le logiciel</p>
+      <h2 class="reveal">Une alternative à ChatGPT. <br>Calculée <span class="italic">chez nos partenaires</span>.</h2>
+      <p class="section-sub reveal">Heat AI est notre IA conversationnelle — pour écrire, chercher, résumer, coder. Plutôt que de payer des data centers, on distribue son calcul sur des modules hébergés gratuitement chez des villes, bailleurs et entreprises. Chaque réponse qu'elle calcule dégage une chaleur renvoyée directement dans le bâtiment qui héberge le module.</p>
+    </div>
+
+    <div class="ia-layout">
+      <div class="ia-panel reveal">
+        <div class="ia-panel-top">
+          <span class="ia-dot"></span> Heat AI — assistant · calcul sur Module H‑01
+        </div>
+        <div class="chat-thread">
+          <div class="chat-msg chat-msg--user"><p>Résume-moi ce bail en 5 points.</p></div>
+          <div class="chat-msg chat-msg--ai"><p>1. Durée 3 ans · 2. Préavis 3 mois · 3. Charges incluses · 4. Caution 1 mois · 5. Révision indexée IRL.</p></div>
+          <div class="chat-msg chat-msg--user"><p>Écris une relance client pour un impayé, ton courtois.</p></div>
+          <div class="chat-msg chat-msg--ai chat-msg--typing"><span></span><span></span><span></span></div>
+        </div>
+        <div class="ia-panel-foot">Cette conversation est calculée sur le module H‑01 — la chaleur qu'elle produit reste sur place, pour chauffer le bâtiment qui l'héberge.</div>
+      </div>
+
+      <div class="ia-features">
+        <div class="ia-feature reveal">
+          <span class="ia-feature-index">01</span>
+          <h4>Remplace ChatGPT</h4>
+          <p>Rédaction, résumé, code, recherche : les mêmes usages qu'un assistant IA grand public, accessible à tous.</p>
+        </div>
+        <div class="ia-feature reveal">
+          <span class="ia-feature-index">02</span>
+          <h4>Calcul distribué, pas centralisé</h4>
+          <p>Pas de méga data center : vos conversations tournent sur notre réseau de modules, hébergés chez nos partenaires plutôt que chez un hyperscaler.</p>
+        </div>
+        <div class="ia-feature reveal">
+          <span class="ia-feature-index">03</span>
+          <h4>Offert à nos hébergeurs</h4>
+          <p>Les sites qui hébergent un module Heat AI reçoivent l'offre Pro gratuite pour leurs équipes ou habitants, en plus de la chaleur.</p>
+        </div>
+        <div class="ia-feature reveal">
+          <span class="ia-feature-index">04</span>
+          <h4>Plus on s'en sert, plus on chauffe</h4>
+          <p>Chaque conversation est un calcul, chaque calcul est de la chaleur — l'usage de l'IA nourrit directement le chauffage.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing">
+      <p class="pricing-kicker reveal">— Les formules individuelles</p>
+      <h3 class="pricing-title reveal">Pour un usage personnel ou en petite équipe.</h3>
+      <p class="pricing-note reveal">Vous hébergez un module Heat AI ? Ces formules ne vous concernent pas : l'offre Pro est incluse gratuitement pour vos équipes ou habitants — <a href="#garanties">voir les garanties d'hébergement</a>.</p>
+
+      <div class="pricing-grid">
+        <div class="pricing-card reveal">
+          <h4 class="pricing-name">Gratuit</h4>
+          <p class="pricing-price">0€<span>/mois</span></p>
+          <p class="pricing-desc">Pour découvrir l'assistant Heat AI, accessible à tous.</p>
+          <ul class="pricing-list">
+            <li>50 messages / jour</li>
+            <li>1 utilisateur</li>
+            <li>Historique 7 jours</li>
+            <li>Sans engagement</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost btn--full">Commencer</a>
+        </div>
+
+        <div class="pricing-card pricing-card--featured reveal">
+          <span class="pricing-badge">Le plus choisi</span>
+          <h4 class="pricing-name">Pro</h4>
+          <p class="pricing-price">19€<span>/mois</span></p>
+          <p class="pricing-desc">Pour un foyer ou une petite équipe, au quotidien.</p>
+          <ul class="pricing-list">
+            <li>Messages illimités</li>
+            <li>Jusqu'à 5 utilisateurs</li>
+            <li>Historique illimité</li>
+            <li>Calcul prioritaire</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary btn--full">Choisir Pro</a>
+        </div>
+
+        <div class="pricing-card reveal">
+          <h4 class="pricing-name">Max</h4>
+          <p class="pricing-price">Sur devis</p>
+          <p class="pricing-desc">Pour les villes, bailleurs et entreprises.</p>
+          <ul class="pricing-list">
+            <li>Utilisateurs illimités</li>
+            <li>API & intégrations</li>
+            <li>SLA et support dédié</li>
+            <li>Chaleur priorisée aux pics</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost btn--full">Nous contacter</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="ia-cta reveal">
+      <p>Vous hébergez un module Heat AI ? L'offre Pro est incluse gratuitement pour vos équipes ou habitants — en plus de la chaleur.</p>
+      <a href="#contact" class="link-arrow">Devenir hébergeur <span>→</span></a>
+    </div>
+  </section>
+
+  <!-- IMPACT -->
+  <section class="impact" id="impact">
+    <div class="section-head section-head--dark">
+      <p class="tag reveal">— L'impact</p>
+      <h2 class="reveal">La même énergie, <br>utilisée deux fois.</h2>
+    </div>
+
+    <div class="impact-grid">
+      <div class="impact-card reveal">
+        <p class="impact-number" data-count="128">0</p>
+        <p class="impact-unit">modules actifs</p>
+        <p class="impact-desc">déployés dans 14 villes et 6 sites industriels en Europe</p>
+      </div>
+      <div class="impact-card reveal">
+        <p class="impact-number" data-count="9400">0</p>
+        <p class="impact-unit">foyers chauffés</p>
+        <p class="impact-desc">sans combustion, raccordés à un réseau Heat AI</p>
+      </div>
+      <div class="impact-card reveal">
+        <p class="impact-number" data-count="3200">0</p>
+        <p class="impact-unit">tonnes de CO₂ évitées</p>
+        <p class="impact-desc">chaque année, par rapport à une chaufferie gaz équivalente</p>
+      </div>
+      <div class="impact-card reveal">
+        <p class="impact-number" data-count="42">0</p>
+        <p class="impact-unit">% d'économie</p>
+        <p class="impact-desc">sur la facture de chauffage des bâtiments raccordés</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEMOIGNAGE -->
+  <section class="quote">
+    <p class="quote-mark reveal">"</p>
+    <blockquote class="reveal">
+      Heat AI nous a installé un module gratuitement, en échange de l'héberger. On a retiré une chaudière fioul, les habitants ont eu du chauffage dès la troisième semaine — et nous, plus aucune facture de chauffage à payer.
+    </blockquote>
+    <p class="quote-author reveal">— Responsable énergie, bailleur social, Métropole de Lyon</p>
+  </section>
+
+  <!-- CONTACT / CTA -->
+  <section class="contact" id="contact">
+    <div class="contact-head">
+      <p class="tag reveal">— Démarrer</p>
+      <h2 class="reveal">Devenez <br>hébergeur.</h2>
+      <p class="section-sub reveal">Ville, bailleur, industriel, opérateur d'énergie : décrivez votre site, on étudie gratuitement l'installation d'un module Heat AI chez vous — et on revient vers vous sous 48h.</p>
+      <a href="#garanties" class="link-arrow reveal">Voir les garanties avant d'écrire <span>→</span></a>
+    </div>
+
+    <form class="contact-form reveal" id="contactForm">
+      <div class="field">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" placeholder="Jeanne Dupont" required>
+      </div>
+      <div class="field">
+        <label for="org">Organisation</label>
+        <input type="text" id="org" name="org" placeholder="Ville, bailleur, entreprise…" required>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="vous@organisation.fr" required>
+      </div>
+      <div class="field">
+        <label for="need">Votre besoin</label>
+        <textarea id="need" name="need" rows="3" placeholder="Nombre de logements, surface, chauffage actuel…"></textarea>
+      </div>
+      <button type="submit" class="btn btn--primary btn--full">Envoyer la demande <span>→</span></button>
+      <p class="form-note" id="formNote"></p>
+    </form>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <a href="#top" class="logo logo--lg">
+    <svg class="logo-icon" viewBox="0 0 958 442" aria-hidden="true"><use href="#logoMark"></use></svg>
+  </a>
+  <p class="footer-tag">Turning data into heat.</p>
+
+  <div class="footer-grid">
+    <div class="footer-col">
+      <p class="footer-title">Sections</p>
+      <a href="#concept">Concept</a>
+      <a href="#comment">Comment</a>
+      <a href="#produit">Produit</a>
+      <a href="#garanties">Garanties</a>
+      <a href="#impact">Impact</a>
+    </div>
+    <div class="footer-col">
+      <p class="footer-title">Contact</p>
+      <a href="mailto:hello@heat-ai.fr">hello@heat-ai.fr</a>
+      <a href="#contact">Devenir hébergeur</a>
+    </div>
+    <div class="footer-col">
+      <p class="footer-title">Suivre</p>
+      <a href="#">LinkedIn</a>
+      <a href="#">Presse</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 Heat AI — Infrastructure thermique</span>
+    <span>Conçu pour réchauffer, pas pour impressionner.</span>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
